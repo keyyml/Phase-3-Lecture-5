@@ -10,7 +10,7 @@ class Makeup():
     
     @brand.setter
     def brand(self, brand):
-        if not hasattr(self, brand):
+        if not hasattr(self, "brand"):
             self._brand = brand
         else:
             raise Exception("Brand can be set only once!")
@@ -25,3 +25,8 @@ class Makeup():
             self._type = type
         else:
             raise Exception("Type must be a string!")
+        
+    # TODO: calculate most popular makeup brand
+        
+    def __str__(self):
+        return f"Brand: {self.brand}\nMakeup Type: {self.type}"

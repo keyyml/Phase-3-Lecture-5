@@ -25,3 +25,6 @@ class People():
             self._age = age
         else:
             raise Exception("Age must be an integer greater than 12!")
+        
+    def __str__(self):
+        return f"Name: {self.name}\nAge: {self.age}"
