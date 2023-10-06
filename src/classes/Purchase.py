@@ -20,5 +20,7 @@ class Purchase():
     def date(self, date):
         self._date = date
 
+    # TODO: calculate most popular makeup brand
+
     def __str__(self):
         return f"Purchaser: {self.person}\nMakeup Item: {self.makeup_item}\nDate: {self.date}"

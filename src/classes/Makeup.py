@@ -4,6 +4,9 @@ class Makeup():
         self._brand = brand
         self._type = type
 
+        # TODO: add people who bought makeup item
+        # TODO: add purchases of makeup item
+
     @property
     def brand(self):
         return self._brand
@@ -25,8 +28,6 @@ class Makeup():
             self._type = type
         else:
             raise Exception("Type must be a string!")
-        
-    # TODO: calculate most popular makeup brand
         
     def __str__(self):
         return f"Brand: {self.brand}\nMakeup Type: {self.type}"

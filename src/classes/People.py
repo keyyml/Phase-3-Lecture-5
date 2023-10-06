@@ -4,6 +4,9 @@ class People():
         self._name = name
         self._age = age
 
+        # TODO: add makeup items purchased by person
+        # TODO: add purchases by person
+        
     @property
     def name(self):
         return self._name
