@@ -6,6 +6,8 @@ class People():
 
         # TODO: add makeup items purchased by person
         # TODO: add purchases by person
+        self.makeup_items = []
+        self.purchases = []
         
     @property
     def name(self):
@@ -29,5 +31,5 @@ class People():
         else:
             raise Exception("Age must be an integer greater than 12!")
         
-    def __str__(self):
-        return f"Name: {self.name}\nAge: {self.age}"
+    def __repr__(self):
+        return f"\nName: {self.name}\nAge: {self.age}"
